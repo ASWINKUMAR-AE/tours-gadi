@@ -21,7 +21,7 @@ const AppDownloadSection = () => {
           <p className="ad-card-desc">Explore, book, and enjoy curated tour packages and convenient rides.</p>
           <p className="ad-card-size">File Size: 121 MB</p>
           <a
-            href="https://www.wavecabs.com/uploads/APKs/rider.apk"
+            href="https://www.wavecabs.com/apk/rider.apk"
             download="rider.apk"
             target="_blank"
             rel="noopener noreferrer"
@@ -37,7 +37,7 @@ const AppDownloadSection = () => {
           <p className="ad-card-desc">Accept rides and earn on your schedule with our driver app.</p>
           <p className="ad-card-size">File Size: 110 MB</p>
           <a
-            href="https://www.wavecabs.com/uploads/APKs/TourGadi-Driver.apk"
+            href="https://www.wavecabs.com/apk/TourGadi-Driver.apk"
             download
             target="_blank"
             rel="noopener noreferrer"
@@ -53,7 +53,7 @@ const AppDownloadSection = () => {
           <p className="ad-card-desc">Publish tour packages, manage bookings, and grow your tour agency.</p>
           <p className="ad-card-size">File Size: 98 MB</p>
           <a
-            href="https://www.wavecabs.com/uploads/APKs/TourGadi-Vendor.apk"
+            href="https://www.wavecabs.com/apk/TourGadi-Vendor.apk"
             download
             target="_blank"
             rel="noopener noreferrer"

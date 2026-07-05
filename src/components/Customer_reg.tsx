@@ -171,7 +171,7 @@ const CustomerSignUp: React.FC = () => {
           "name": "TourGadi User App",
           "operatingSystem": "Android, iOS",
           "applicationCategory": "TravelApplication",
-          "downloadUrl": "https://www.wavecabs.com/uploads/APKs/rider.apk",
+          "downloadUrl": "https://www.wavecabs.com/apk/rider.apk",
           "offers": {
             "@type": "Offer",
             "price": "0",

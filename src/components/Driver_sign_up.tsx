@@ -200,7 +200,7 @@ const DriverSignUp: React.FC = () => {
           "name": "TourGadi Driver App",
           "operatingSystem": "Android, iOS",
           "applicationCategory": "TravelApplication",
-          "downloadUrl": "https://www.wavecabs.com/uploads/APKs/TourGadi-Driver.apk",
+          "downloadUrl": "https://www.wavecabs.com/apk/TourGadi-Driver.apk",
           "offers": {
             "@type": "Offer",
             "price": "0",
