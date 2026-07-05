@@ -21,8 +21,8 @@ const AppDownloadSection = () => {
           <p className="ad-card-desc">Explore, book, and enjoy curated tour packages and convenient rides.</p>
           <p className="ad-card-size">File Size: 121 MB</p>
           <a
-            href="https://www.wavecabs.com/uploads/APKs/TourGadi-User.apk"
-            download
+            href="https://www.wavecabs.com/uploads/APKs/rider.apk"
+            download="rider.apk"
             target="_blank"
             rel="noopener noreferrer"
             className="ad-button"
