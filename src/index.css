@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bs-primary: #090909;
+  --bs-primary-rgb: 0, 0, 0;
+  --transition-duration: 0.5s;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  transition: background-color var(--transition-duration) ease, color var(--transition-duration) ease, filter var(--transition-duration) ease;
+  overflow-x: hidden !important;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  --bs-body-bg: #121212;
+  --bs-body-color: #e9ecef;
+  --bs-light: #2d2d2d;
+  --bs-light-rgb: 45, 45, 45;
+  --bs-dark: #f8f9fa;
+  --bs-dark-rgb: 248, 249, 250;
+}
+
+/* Grayscale Theme - Light Mode */
+body.grayscale:not(.dark-mode) {
+  --bs-primary: #b6bbc0;
+  --bs-primary-rgb: 108, 117, 125;
+  filter: grayscale(100%);
+}
+
+/* Grayscale Theme - Dark Mode */
+body.grayscale.dark-mode {
+  --bs-primary: #adb5bd;
+  --bs-primary-rgb: 173, 181, 189;
+  filter: grayscale(100%);
+}
+
+/* Smooth theme transition for all components */
+.card,
+.navbar,
+.btn,
+.form-control,
+.input-group-text,
+.bg-light,
+.bg-dark,
+.bg-white,
+.text-dark,
+.text-light,
+.border,
+.icon-box {
+  transition: all var(--transition-duration) ease !important;
+}
+
+/* Custom Styles */
+.hero-section {
+  padding: 6rem 0;
+  overflow: hidden;
+}
+
+.vertical-line {
+  position: relative;
+  padding-left: 4px;
+}
+
+/* Phone mockup animations */
+.phone-mockup-container {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Feature cards */
+.feature-card {
+  overflow: hidden;
+}
+
+.feature-icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.feature-icon-bg {
+  width: 60px;
+  height: 60px;
+  background-color: var(--bs-light);
+  transition: all 0.3s ease;
+}
+
+.feature-card:hover .feature-icon-wrapper {
+  transform: scale(1.1);
+}
+
+/* Testimonial cards */
+.testimonial-card {
+  overflow: hidden;
+}
+
+.testimonial-card img {
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Stats section */
+.stats-section {
+  background: linear-gradient(45deg, var(--bs-primary), #0d0d0d);
+  transition: background var(--transition-duration) ease;
+}
+
+/* Grayscale stats section adjustment */
+body.grayscale:not(.dark-mode) .stats-section {
+  background: linear-gradient(45deg, #6c757d, #adb5bd) !important;
+}
+
+body.grayscale.dark-mode .stats-section {
+  background: linear-gradient(45deg, #495057, #6c757d) !important;
+}
+
+.stat-item .icon-wrapper {
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover .icon-wrapper {
+  transform: scale(1.1);
+}
+
+/* Custom button styles */
+.btn-success, .btn-outline-success {
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.btn-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--bs-primary-rgb), 0.2);
+}
+
+.btn-outline-success:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(var(--bs-primary-rgb), 0.1);
+}
+
+/* Custom card hover effects */
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-section {
+    padding: 4rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2rem;
+  }
+  
+  .vertical-line .bg-success {
+    height: 60px;
+  }
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden !important;
+}
+
+/* Phone mockup and animation scaling */
+.phone-mockup-container,
+.phone-container,
+.phone-screen,
+dotlottie-player {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  overflow: hidden;
+}
+
+/* Padding fix on mobile */
+@media (max-width: 576px) {
+  .phone-mockup-container {
+    padding: 0 1rem;
+  }
+
+  .mockup-overlay {
+    padding: 0.75rem;
+  }
+
+  .hero-section {
+    padding: 3rem 0 !important;
+  }
+
+  .display-4 {
+    font-size: 2rem !important;
+  }
+}
+
+
+/* Overlay animation for modal */
+@keyframes grayscaleFadeIn {
+  from {
+    opacity: 0;
+    filter: grayscale(1) blur(6px);
+  }
+  to {
+    opacity: 1;
+    filter: grayscale(1) blur(0);
+  }
+}
+
+/* Modal entrance animation */
+@keyframes modalPopIn {
+  from {
+    opacity: 0;
+    transform: scale(0.92) translateY(30px);
+    filter: grayscale(1);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    filter: grayscale(1);
+  }
+}
+
+.grayscale-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1050;
+  background: rgba(30, 30, 30, 0.55);
+  backdrop-filter: blur(8px) grayscale(1);
+  animation: grayscaleFadeIn 0.4s cubic-bezier(.4,2,.3,1) forwards;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.grayscale-modal-content {
+  background: rgba(255,255,255,0.10);
+  border-radius: 1.25rem;
+  box-shadow: 0 6px 36px 0 rgba(0,0,0,0.35);
+  border: 1.5px solid rgba(200,200,200,0.22);
+  backdrop-filter: blur(16px) grayscale(1);
+  overflow: hidden;
+  animation: modalPopIn 0.4s cubic-bezier(.4,2,.3,1) forwards;
+  max-width: 360px;
+  width: 100%;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+.grayscale-modal-content.dark {
+  background: rgba(30,30,30,0.80);
+  border: 1.5px solid rgba(70,70,70,0.35);
+  box-shadow: 0 6px 36px 0 rgba(0,0,0,0.65);
+}
+
+.grayscale-modal-content .btn {
+  filter: grayscale(0) !important;
+  transition: filter 0.2s;
+}
+.grayscale-modal-content .btn:hover {
+  filter: grayscale(0.5) !important;
+}
+
+.grayscale-modal-content .modal-header {
+  border-bottom: none;
+  background: transparent;
+}
+
+.grayscale-modal-content .modal-footer {
+  border-top: none;
+  background: transparent;
+}
