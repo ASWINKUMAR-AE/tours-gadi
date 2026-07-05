@@ -148,11 +148,17 @@ const DriversSection: React.FC = () => {
                           </div>
                         </a>
                         
-                        <a href="#" className="btn btn-light rounded-pill py-2 px-3 d-flex align-items-center hover-lift">
+                        <a 
+                          href="https://www.wavecabs.com/uploads/APKs/TourGadi-Driver.apk" 
+                          download 
+                          target="_blank" 
+                          rel="noopener noreferrer" 
+                          className="btn btn-light rounded-pill py-2 px-3 d-flex align-items-center hover-lift"
+                        >
                           <Download className="me-2" size={18} />
                           <div className="text-start">
                             <small className="d-block text-muted">Get it on</small>
-                            <span className="fw-bold">Google Play</span>
+                            <span className="fw-bold">Google Play (APK)</span>
                           </div>
                         </a>
                       </div>
