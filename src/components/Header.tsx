@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Car, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import DarkModeToggle from './DarkModeToggle';
 
 interface HeaderProps {
@@ -9,7 +9,6 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [showSignUpModal, setShowSignUpModal] = React.useState(false);
   const [scrolled, setScrolled] = React.useState(false);
 
   useEffect(() => {
@@ -26,16 +25,6 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleSignUpClick = (e: React.MouseEvent) => {
-    e.preventDefault();
-    setShowSignUpModal(true);
-    setIsMenuOpen(false);
-  };
-
-  const closeModal = () => {
-    setShowSignUpModal(false);
   };
 
   const scrollToSection = (e: React.MouseEvent, sectionId: string) => {
@@ -130,124 +119,12 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
                   Download
                 </a>
               </li>
-
-              <li className="nav-item ms-lg-3 mt-2 mt-lg-0">
-                <a
-                  className="btn btn-dark px-4 rounded-pill"
-                  href="#signup"
-                  onClick={handleSignUpClick}
-                  style={{
-                    transition: 'all 0.2s ease-in-out',
-                    transform: 'translateY(0)'
-                  }}
-                >
-                  Sign Up
-                </a>
-              </li>
             </ul>
           </div>
         </div>
       </nav>
 
-      {/* Sign Up Modal */}
-      {showSignUpModal && (
-        <div className={`modal fade show ${theme === 'light' ? 'light-theme' : 'dark-theme'}`} style={{ display: 'block', backgroundColor: 'rgba(0,0,0,0.5)' }}>
-          <div className="modal-dialog modal-dialog-centered">
-            <div className="modal-content" style={{
-              border: 'none',
-              borderRadius: '12px',
-              boxShadow: '0 8px 24px rgba(0,0,0,0.15)',
-              animation: 'modalAppear 0.3s ease-out forwards'
-            }}>
-              <div className="modal-header" style={{
-                borderBottom: '1px solid #f0f0f0',
-                backgroundColor: theme === 'light' ? '#ffffff' : '#212529'
-              }}>
-                <h5 className="modal-title" style={{
-                  color: theme === 'light' ? '#000000' : '#ffffff',
-                  fontWeight: '600'
-                }}>Sign Up As</h5>
-                <button
-                  type="button"
-                  className="btn-close"
-                  onClick={closeModal}
-                  aria-label="Close"
-                  style={{
-                    filter: theme === 'light' ? 'invert(0%)' : 'invert(100%)'
-                  }}
-                ></button>
-              </div>
-              <div className="modal-body d-flex flex-column gap-3" style={{
-                padding: '24px',
-                backgroundColor: theme === 'light' ? '#ffffff' : '#212529'
-              }}>
-                <a
-                  href="/signup/driver"
-                  className="btn btn-dark py-3 d-flex align-items-center justify-content-center gap-2"
-                  style={{
-                    backgroundColor: theme === 'light' ? '#f8f9fa' : '#343a40',
-                    color: theme === 'light' ? '#000000' : '#ffffff',
-                    border: theme === 'light' ? '1px solid #e0e0e0' : '1px solid #495057',
-                    borderRadius: '8px',
-                    fontWeight: '500',
-                    transition: 'all 0.2s ease',
-                    transform: 'translateY(0)'
-                  }}
-                >
-                  <Car size={20} />
-                  <span>Driver</span>
-                </a>
-                <a
-                  href="/signup/customer"
-                  className="btn btn-dark py-3 d-flex align-items-center justify-content-center gap-2"
-                  style={{
-                    backgroundColor: theme === 'light' ? '#f8f9fa' : '#343a40',
-                    color: theme === 'light' ? '#000000' : '#ffffff',
-                    border: theme === 'light' ? '1px solid #e0e0e0' : '1px solid #495057',
-                    borderRadius: '8px',
-                    fontWeight: '500',
-                    transition: 'all 0.2s ease',
-                    transform: 'translateY(0)'
-                  }}
-                >
-                  <span>Customer</span>
-                </a>
-              </div>
-              <div className="modal-footer" style={{
-                borderTop: '1px solid #f0f0f0',
-                backgroundColor: theme === 'light' ? '#ffffff' : '#212529',
-                borderRadius: '0 0 12px 12px'
-              }}>
-                {/* <p className="small mb-0" style={{
-                  color: theme === 'light' ? '#666666' : '#adb5bd'
-                }}>
-                  Already have an account? <a href="/login" style={{
-                    color: theme === 'light' ? '#000000' : '#ffffff',
-                    fontWeight: '500',
-                    textDecoration: 'none',
-                    ':hover': {
-                      textDecoration: 'underline'
-                    }
-                  }}>Log in</a>
-                </p> */}
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
-
       <style jsx>{`
-        @keyframes modalAppear {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-        
         .nav-link:hover {
           color: ${theme === 'light' ? '#000000' : '#ffffff'} !important;
           transform: translateY(-2px);
@@ -255,7 +132,6 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         
         .navbar {
           transition: all 0.3s ease-in-out;
-          
         }
       `}</style>
     </header>
