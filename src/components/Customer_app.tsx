@@ -16,7 +16,7 @@ const DriversSection: React.FC = () => {
           "name": "TourGadi User App",
           "operatingSystem": "Android, iOS",
           "applicationCategory": "TravelApplication",
-          "downloadUrl": "https://www.wavecabs.com/apk/rider.apk",
+          "downloadUrl": "https://tourgadi.in/apps/rider.apk",
           "offers": {
             "@type": "Offer",
             "price": "0",
@@ -149,7 +149,7 @@ const DriversSection: React.FC = () => {
                         </a>
                         
                         <a 
-                          href="https://www.wavecabs.com/apk/rider.apk" 
+                          href="https://tourgadi.in/apps/rider.apk" 
                           download="rider.apk" 
                           target="_blank" 
                           rel="noopener noreferrer" 

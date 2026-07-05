@@ -37,8 +37,8 @@ function HomePage() {
             "@context": "https://schema.org",
             "@type": "Organization",
             "name": "TourGadi",
-            "url": "https://tours-gadi.vercel.app",
-            "logo": "https://tours-gadi.vercel.app/images/logo.png",
+            "url": "https://tourgadi.in",
+            "logo": "https://tourgadi.in/images/logo.png",
             "sameAs": [
               "https://www.facebook.com/tourgadi",
               "https://twitter.com/tourgadi",
@@ -49,10 +49,10 @@ function HomePage() {
             "@context": "https://schema.org",
             "@type": "WebSite",
             "name": "TourGadi",
-            "url": "https://tours-gadi.vercel.app",
+            "url": "https://tourgadi.in",
             "potentialAction": {
               "@type": "SearchAction",
-              "target": "https://tours-gadi.vercel.app/?search={search_term_string}",
+              "target": "https://tourgadi.in/?search={search_term_string}",
               "query-input": "required name=search_term_string"
             }
           },
@@ -60,7 +60,7 @@ function HomePage() {
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "TourGadi",
-            "image": "https://tours-gadi.vercel.app/images/logo.png",
+            "image": "https://tourgadi.in/images/logo.png",
             "telephone": "+919876543210",
             "priceRange": "$$",
             "address": {

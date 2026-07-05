@@ -18,7 +18,7 @@ const SEO: React.FC<SEOProps> = ({
   canonical = window.location.href,
   robots = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1',
   ogType = 'website',
-  ogImage = 'https://tours-gadi.vercel.app/images/logo.png',
+  ogImage = 'https://tourgadi.in/images/logo.png',
   schema,
 }) => {
   useEffect(() => {

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://tours-gadi.vercel.app/sitemap.xml
+Sitemap: https://tourgadi.in/sitemap.xml
