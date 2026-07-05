@@ -1,0 +1,17 @@
+{
+  "short_name": "TourGadi",
+  "name": "TourGadi Premium Tours & Rides",
+  "icons": [
+    {
+      "src": "/images/logo.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#090909",
+  "theme_color": "#090909",
+  "display": "standalone",
+  "orientation": "portrait"
+}

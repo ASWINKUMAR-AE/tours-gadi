@@ -220,6 +220,8 @@ export default function RiderDriverShowcase() {
                             <motion.img
                                 key={data.id}
                                 src={data.image}
+                                alt={`${data.label} App User Interface Showcase`}
+                                loading="lazy"
                                 variants={imageVariants(active)}
                                 initial="initial"
                                 animate="animate"

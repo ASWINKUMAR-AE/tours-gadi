@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import SEO from './SEO';
+import Breadcrumb from './Breadcrumb';
 import { Container, Row, Col, Form, Button, ProgressBar, Alert } from 'react-bootstrap';
 import '@dotlottie/player-component';
 import { CSSTransition } from 'react-transition-group';
@@ -188,6 +190,24 @@ const DriverSignUp: React.FC = () => {
 
   return (
     <Container fluid className="min-vh-100 d-flex align-items-stretch overflow-hidden">
+      <SEO
+        title="Driver Sign Up - Earn on Your Own Schedule"
+        description="Register as a driver with TourGadi. Pay low commissions per trip, track your earnings in real-time, and drive on your schedule with 24/7 operator support."
+        keywords="driver registration, register cab driver, tourgadi driver sign up, earn money driving, cab driver jobs"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "TourGadi Driver App",
+          "operatingSystem": "Android, iOS",
+          "applicationCategory": "TravelApplication",
+          "downloadUrl": "https://www.wavecabs.com/uploads/APKs/TourGadi-Driver.apk",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
       <CSSTransition
         in={showAlert}
         timeout={300}
@@ -224,6 +244,10 @@ const DriverSignUp: React.FC = () => {
         </Col>
 
 <Col md={6} className="p-5 d-flex flex-column justify-content-center bg-white rounded-5 shadow-sm">
+  {/* Breadcrumb Navigation */}
+  <div className="d-flex justify-content-center mb-3">
+    <Breadcrumb items={[{ label: 'Register', path: '/signup/driver' }, { label: 'Driver' }]} />
+  </div>
   {/* Animated header */}
   <div className="text-center mb-4">
     <h1 className="display-6 fw-bold mb-3" style={{ color: '#000', letterSpacing: '-0.5px' }}>

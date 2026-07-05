@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Routes, Route, useLocation } from 'react-router-dom';
+import SEO from './components/SEO';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -21,11 +22,107 @@ import TourAgentsSection from './components/TourAgentsSection';
 import { useDarkMode } from './hooks/useDarkMode';
 import AppDownloadSection from './components/AppDownloadSection';
 import EarbudShowcase from "./components/spatial-product-showcase";
+import FAQSection from './components/FAQSection';
 
 // ✅ HomePage component that contains all homepage sections
 function HomePage() {
   return (
     <>
+      <SEO
+        title="TourGadi | Premium Tour Packages & Rides in Madurai"
+        description="Book verified tour packages, local cabs, and round trips at the best rates in Madurai. TourGadi connects travelers with certified tour operators and reliable local drivers."
+        keywords="tour package, cab booking madurai, tourgadi, local ride hailing, verified driver cabs, custom tour itinerary, tour agent madurai"
+        schema={[
+          {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "TourGadi",
+            "url": "https://tours-gadi.vercel.app",
+            "logo": "https://tours-gadi.vercel.app/images/logo.png",
+            "sameAs": [
+              "https://www.facebook.com/tourgadi",
+              "https://twitter.com/tourgadi",
+              "https://www.instagram.com/tourgadi"
+            ]
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            "name": "TourGadi",
+            "url": "https://tours-gadi.vercel.app",
+            "potentialAction": {
+              "@type": "SearchAction",
+              "target": "https://tours-gadi.vercel.app/?search={search_term_string}",
+              "query-input": "required name=search_term_string"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "TourGadi",
+            "image": "https://tours-gadi.vercel.app/images/logo.png",
+            "telephone": "+919876543210",
+            "priceRange": "$$",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "KK Nagar",
+              "addressLocality": "Madurai",
+              "addressRegion": "Tamil Nadu",
+              "postalCode": "625020",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": 9.9252,
+              "longitude": 78.1198
+            },
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "00:00",
+              "closes": "23:59"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "What is TourGadi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TourGadi is a premium tour packages and ride-hailing booking platform operating in Madurai. It connects travelers directly with certified local drivers and tour operators."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "How can I book a tour package with TourGadi?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "You can book custom packages using the TourGadi User App, or view itineraries directly on the website and coordinate with certified tour agents."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "What are the fees for drivers?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "TourGadi offers a simple commission-per-ride model for drivers. There are no subscription fees, platform fees, or hidden deductions."
+                }
+              }
+            ]
+          }
+        ]}
+      />
       <HeroSection
         data-aos="fade-in"
         data-aos-delay="50"
@@ -77,6 +174,7 @@ function HomePage() {
         data-aos-delay="350"
         data-aos-duration="800"
       />
+      <FAQSection />
 
     </>
   );

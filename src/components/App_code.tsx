@@ -1,9 +1,29 @@
 import React from 'react';
+import SEO from './SEO';
+import Breadcrumb from './Breadcrumb';
 import { DollarSign, Clock, BarChart3, MapPin, Download, Smartphone, QrCode, ArrowRight } from 'lucide-react';
 
 const DriversSection: React.FC = () => {
   return (
     <section id="drivers" className="py-5 my-5 bg-light position-relative overflow-hidden">
+      <SEO
+        title="Download TourGadi Driver App - Drive & Earn Premium Income"
+        description="Get the TourGadi Driver App for iOS and Android. View upfront ride fares, live map navigation, and weekly automatic payouts."
+        keywords="download driver app, tourgadi driver apk, install cab driver app"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "TourGadi Driver App",
+          "operatingSystem": "Android, iOS",
+          "applicationCategory": "TravelApplication",
+          "downloadUrl": "https://www.wavecabs.com/uploads/APKs/TourGadi-Driver.apk",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
       {/* Animated background elements */}
       <div className="position-absolute top-0 end-0 w-100 h-100 bg-pattern opacity-10"></div>
       <div className="position-absolute bottom-0 start-0 w-100 h-100">
@@ -11,6 +31,10 @@ const DriversSection: React.FC = () => {
       </div>
       
       <div className="container position-relative">
+        {/* Breadcrumb Navigation */}
+        <div className="mb-4">
+          <Breadcrumb items={[{ label: 'Download', path: '/login' }, { label: 'Driver App' }]} />
+        </div>
         <div className="row g-5 align-items-center">
           <div className="col-lg-7">
             <div className="row g-4">

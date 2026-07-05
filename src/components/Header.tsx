@@ -44,7 +44,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
       <nav className="navbar navbar-expand-lg navbar-light bg-body-tertiary">
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#">
-            <img src="/images/logo.png" alt="WAVE CABS" className="me-2" width={24} />
+            <img src="/images/logo.png" alt="TourGadi Logo" className="me-2" width={24} />
             <span className="fw-bold">TOUR GADI</span>
           </a>
 

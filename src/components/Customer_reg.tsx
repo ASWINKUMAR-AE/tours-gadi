@@ -1,5 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
+import SEO from './SEO';
+import Breadcrumb from './Breadcrumb';
 import { Container, Row, Col, Form, Button, Alert } from 'react-bootstrap';
 import '@dotlottie/player-component';
 import { CSSTransition } from 'react-transition-group';
@@ -159,6 +161,24 @@ const CustomerSignUp: React.FC = () => {
 
   return (
     <Container fluid className="min-vh-100 d-flex align-items-stretch overflow-hidden">
+      <SEO
+        title="Customer Registration - Sign Up for Premium Cabs & Tours"
+        description="Create a TourGadi account to instantly book customized holiday packages and local rides with transparent upfront pricing."
+        keywords="create tourgadi account, customer sign up, book ride, book tour package, sign up tourgadi"
+        schema={{
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "TourGadi User App",
+          "operatingSystem": "Android, iOS",
+          "applicationCategory": "TravelApplication",
+          "downloadUrl": "https://www.wavecabs.com/uploads/APKs/TourGadi-User.apk",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "INR"
+          }
+        }}
+      />
       <CSSTransition
         in={showAlert}
         timeout={300}
@@ -195,6 +215,10 @@ const CustomerSignUp: React.FC = () => {
         </Col>
 
         <Col md={6} className="p-5 d-flex flex-column justify-content-center bg-white rounded-5 shadow-sm">
+          {/* Breadcrumb Navigation */}
+          <div className="d-flex justify-content-center mb-3">
+            <Breadcrumb items={[{ label: 'Register', path: '/signup/customer' }, { label: 'Rider' }]} />
+          </div>
           <div className="text-center mb-4">
             <h1 className="display-6 fw-bold mb-3" style={{ color: '#000', letterSpacing: '-0.5px' }}>
               <span className="d-inline-block" style={{ 
