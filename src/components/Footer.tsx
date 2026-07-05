@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
         <div className="row g-4">
           <div className="col-lg-4">
             <div className="d-flex align-items-center mb-3">
-              <h5 className="m-0 fw-bold">TOURS GADI</h5>
+              <h5 className="m-0 fw-bold">TOUR GADI</h5>
             </div>
             <p className="mb-4">Making innovations since 2026. We connect travelers with tour agents and drivers to make travel and transportation more accessible for everyone.</p>
             <div className="d-flex gap-3">
@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
         
          <div className="row">
           <div className="col-md-6 mb-3 mb-md-0">
-            <p className="mb-0">© 2026 TOURS GADI. All rights reserved.</p>
+            <p className="mb-0">© 2026 TOUR GADI. All rights reserved.</p>
           </div>
           <div className="col-md-6 text-md-end">
             <a href="#" className="text-dark dark:text-gray-200 text-decoration-none me-3">Privacy Policy</a>

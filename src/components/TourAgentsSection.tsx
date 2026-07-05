@@ -12,9 +12,9 @@ const TourAgentsSection: React.FC = () => {
               <div className="pe-4 text-lg-end">
                 <h2 className="display-6 fw-bold mb-4">For Tour Agents</h2>
                 <p className="lead mb-4">
-                  Partner with ToursGadi to grow your agency. Easily publish customized tour packages and manage bookings.
+                  Partner with TourGadi to grow your agency. Easily publish customized tour packages and manage bookings.
                 </p>
-                <a href="#download-toursgadi-apps" className="btn btn-outline-warning rounded-pill px-4 text-dark border-dark">
+                <a href="#download-tourgadi-apps" className="btn btn-outline-warning rounded-pill px-4 text-dark border-dark">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" className="me-2" aria-hidden="true">
                     <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l4-4m-4 4-4-4" />
                     <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 21H3" />

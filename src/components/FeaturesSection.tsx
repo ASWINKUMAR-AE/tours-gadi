@@ -6,7 +6,7 @@ const FeaturesSection: React.FC = () => {
     <section className="features-section py-5 my-5 bg-light">
       <div className="container">
         <div className="text-center mb-5">
-          <h2 className="display-6 fw-bold mb-3">Why Choose ToursGadi</h2>
+          <h2 className="display-6 fw-bold mb-3">Why Choose TourGadi</h2>
           <p className="lead text-muted">Experience the future of travel packages and urban mobility with our innovative features</p>
         </div>
         

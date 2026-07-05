@@ -56,7 +56,7 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
         <div className="container">
           <a className="navbar-brand d-flex align-items-center" href="#">
             <img src="/images/logo.png" alt="WAVE CABS" className="me-2" width={24} />
-            <span className="fw-bold">TOURS GADI</span>
+            <span className="fw-bold">TOUR GADI</span>
           </a>
 
           <div className="d-flex align-items-center">
@@ -118,10 +118,10 @@ const Header: React.FC<HeaderProps> = ({ theme, toggleTheme }) => {
 
               <li className="nav-item ms-lg-3 mt-2 mt-lg-0">
                 <a
-                  href="#download-toursgadi-apps"
-                  onClick={(e) => scrollToSection(e, '#download-toursgadi-apps')}
+                  href="#download-tourgadi-apps"
+                  onClick={(e) => scrollToSection(e, '#download-tourgadi-apps')}
                   className="btn btn-outline-dark rounded-pill px-4"
-                  aria-label="Download ToursGadi apps"
+                  aria-label="Download TourGadi apps"
                 >
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" className="me-2" aria-hidden="true">
                     <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l4-4m-4 4-4-4" />

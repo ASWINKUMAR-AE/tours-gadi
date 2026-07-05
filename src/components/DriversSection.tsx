@@ -66,7 +66,7 @@ const DriversSection: React.FC = () => {
                 <p className="lead mb-4">
                   Our drivers get real time stats to help optimize their rides better and earn more, straight from the app.
                 </p>
-                <a href="#download-toursgadi-apps" className="btn btn-outline-dark rounded-pill px-4">
+                <a href="#download-tourgadi-apps" className="btn btn-outline-dark rounded-pill px-4">
                   <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 24 24" className="me-2" aria-hidden="true">
                     <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M12 3v12m0 0l4-4m-4 4-4-4" />
                     <path stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" d="M21 21H3" />

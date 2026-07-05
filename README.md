@@ -1,1 +1,1 @@
-# tours-gadi
+# tour-gadi
